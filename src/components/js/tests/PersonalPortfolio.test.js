@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import PersonalPortfolio from './PersonalPortfolio.js';
+import PersonalPortfolio from '../PersonalPortfolio.js';
 
 test('renders learn react link', () => {
   render(<PersonalPortfolio />);

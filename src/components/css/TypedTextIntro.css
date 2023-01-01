@@ -1,0 +1,56 @@
+.typed-container {
+  display: grid;
+  place-items: center;
+  font-family: "inconsolata";
+  font-size: 98px;
+}
+
+.intro-name{
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    margin: 0px 0px 10px 0px;
+    animation: typing 2.5s steps(36, end) forwards, blinking .5s linear 0s 36, hide-cursor 1s linear 3s infinite;
+    border-right: 10px solid;
+}
+
+.typed2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    margin: 10px 0px 10px 0px;
+    max-width: fit-content;
+    animation: hide-cursor 3s linear 0s, typing 1.5s steps(24, end) 3s forwards, blinking .5s linear 3s 24, hide-cursor 1s linear 5s infinite;
+    border-right: 10px solid;
+}
+
+.typed3 {
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    margin: 10px 0px 0px 0px;
+    max-width: fit-content;
+    animation: hide-cursor 5s linear 0s, typing 2s steps(22, end) 5s forwards, blinking .5s linear 5s infinite;
+    border-right: 10px solid;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to {width: 100%}
+}
+
+@keyframes blinking {
+    0% {border-right-color: transparent;}
+    50% {border-right-color: cadetblue;}
+    100%{border-right-color: transparent;}
+}
+
+@keyframes hide-cursor {
+    from { border-right: none; }
+    to {border-right: none;}
+}

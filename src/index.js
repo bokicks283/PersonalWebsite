@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import PersonalPortfolio from './PersonalPortfolio';
+import PersonalPortfolio from './components/js/PersonalPortfolio';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
