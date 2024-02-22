@@ -8,10 +8,13 @@ import ParticleBackground from "./ParticleBackground";
 function PersonalPortfolio(props) {
   return (
     <div className="App">
+      <header className="App-header">
         <ParticleBackground/>
-        <header className="App-header">
-          <TypedText name="Ronald Bocchichio"></TypedText>
-        </header>
+        <TypedText name="Ronald Bocchichio"></TypedText>
+      </header>
+      <div className="page-content">
+        <p>test para</p>
+      </div>
     </div>
   );
 }
